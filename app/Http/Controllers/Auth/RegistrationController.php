@@ -30,7 +30,7 @@ class RegistrationController extends Controller
 
         ];
 //
-        $user = Sentinel::registerAndActivate($credentials);
+        $users = Sentinel::registerAndActivate($credentials);
         return view('backend.authentication.login');
 
 

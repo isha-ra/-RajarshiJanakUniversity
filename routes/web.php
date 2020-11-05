@@ -100,9 +100,9 @@ Route::get('/login', function () {
 
 
 //Route::group(['middleware'=>['auth']],function(){
-//    Route::get('/department/create','Department\DepartmentsController@create');
+   Route::get('/department/create','Department\DepartmentsController@create');
 Route::group(['middleware'=>['authenticated']],function(){
-    Route::get('/department/create','Department\DepartmentsController@create');
+    // Route::get('/department/create','Department\DepartmentsController@create');
     //staff types
     Route::get('/stafftype/','Staff\StafftypeController@index');
     Route::get('/stafftype/create','Staff\StafftypeController@create');
